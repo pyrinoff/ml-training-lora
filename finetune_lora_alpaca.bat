@@ -1,0 +1,1 @@
+python finetune_lora_alpaca.py --base_model 'decapoda-research/llama-7b-hf' --data_path './training-data/training_data.json'  --output_dir './output_lora_alpaca'

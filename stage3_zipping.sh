@@ -1,0 +1,1 @@
+zip -r alpaca_finetuned.zip output-lora-alpaca/
