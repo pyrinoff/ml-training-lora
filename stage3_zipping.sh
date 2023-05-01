@@ -1,1 +1,2 @@
-zip -r alpaca_finetuned.zip output-lora-alpaca/
+apt-get install zip
+zip -r output-lora-alpaca.zip output-lora-alpaca/
