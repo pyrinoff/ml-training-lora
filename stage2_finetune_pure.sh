@@ -2,7 +2,6 @@ python finetune.py \
   --base_model 'yahma/llama-7b-hf' \
   --data_path './training-data/training_data.json' \
   --output_dir './output-lora-alpaca' \
-  --resume_from_checkpoint='adapters/alpaca-lora-7b' \
   --num_epochs=100 \
   --cutoff_len=512 \
   --group_by_length \

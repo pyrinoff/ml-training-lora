@@ -1,0 +1,1 @@
+python generate.py --base_model='yahma/llama-7b-hf' --lora_weights="./output-lora-alpaca/" --load_8bit --share_gradio=True
