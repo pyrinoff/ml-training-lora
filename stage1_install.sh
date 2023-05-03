@@ -15,6 +15,3 @@ pip --version
 pip uninstall setuptools && pip install setuptools
 # install requirements
 pip install -r requirements.txt
-
-# hmm
-cp /opt/conda/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cuda117.so /opt/conda/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
