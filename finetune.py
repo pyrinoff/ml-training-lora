@@ -207,6 +207,7 @@ def train(
             set_peft_model_state_dict(model, adapters_weights)
         else:
             print(f"Checkpoint {checkpoint_name} not found")
+            exit(1)
 
     model.print_trainable_parameters()  # Be more transparent about the % of trainable params.
 

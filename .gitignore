@@ -18,3 +18,5 @@ training-data/*
 !training-data/alpaca_data.json
 evaluation/*
 !evaluation/evaluation_tasks.json.example
+flagged
+.idea/

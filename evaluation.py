@@ -15,7 +15,8 @@ from transformers import LlamaTokenizer, LlamaForCausalLM, GenerationConfig
 tokenizer = LlamaTokenizer.from_pretrained("decapoda-research/llama-7b-hf")
 
 BASE_MODEL = "decapoda-research/llama-7b-hf"
-LORA_WEIGHTS = "tloen/alpaca-lora-7b"
+# LORA_WEIGHTS = "tloen/alpaca-lora-7b"
+LORA_WEIGHTS = "./output-lora-alpaca"
 EVAL_FOLDER = "./evaluation"
 EVAL_FILE = EVAL_FOLDER + "/evaluation_tasks.json"
 

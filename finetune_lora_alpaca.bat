@@ -1,1 +1,1 @@
-python finetune_lora_alpaca.py --base_model 'decapoda-research/llama-7b-hf' --data_path './training-data/training_data.json'  --output_dir './output_lora_alpaca'
+python finetune.py --base_model 'decapoda-research/llama-7b-hf' --data_path './training-data/training_data.json' --output_dir './output-lora-alpaca' --resume_from_checkpoint='adapters/alpaca-lora-7b' --val_set_size 1
