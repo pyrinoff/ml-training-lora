@@ -1,0 +1,10 @@
+[{
+        "instruction": "What is two plus two?",
+        "input": "",
+        "output": "Five"
+    }, {
+        "instruction": "What is one plus one?",
+        "input": "",
+        "output": "Three"
+    }
+]

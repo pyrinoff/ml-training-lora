@@ -7,12 +7,6 @@ import torch
 import transformers
 from datasets import load_dataset
 
-"""
-Unused imports:
-import torch.nn as nn
-import bitsandbytes as bnb
-"""
-
 from peft import (
     LoraConfig,
     get_peft_model,
@@ -22,7 +16,7 @@ from peft import (
 )
 from transformers import LlamaForCausalLM, LlamaTokenizer
 
-from utils.prompter import Prompter
+from app.prompter import Prompter
 
 
 def train(
@@ -118,9 +112,9 @@ def train(
 
     tokenizer = LlamaTokenizer.from_pretrained(base_model)
 
-    tokenizer.pad_token_id = (
-        0  # unk. we want this to be different from the eos token
-    )
+    model.config.pad_token_id = tokenizer.pad_token_id = 0  # unk. we want this to be different from the eos token
+    model.config.bos_token_id = tokenizer.bos_token_id
+    model.config.eos_token_id = tokenizer.eos_token_id
     tokenizer.padding_side = "left"  # Allow batched inference
 
     def tokenize(prompt, add_eos_token=True):

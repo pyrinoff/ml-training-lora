@@ -2,7 +2,7 @@ python finetune.py \
   --base_model 'yahma/llama-7b-hf' \
   --data_path './training-data/training_data.json' \
   --output_dir './output-lora-alpaca' \
-  --num_epochs=100 \
+  --num_epochs=50 \
   --cutoff_len=512 \
   --group_by_length \
   --lora_target_modules='[q_proj,k_proj,v_proj,o_proj]' \

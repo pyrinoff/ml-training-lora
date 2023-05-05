@@ -12,10 +12,12 @@ test_data.json
 todo.txt
 .venv
 .vscode
-output-lora-*/
+output-lora-alpaca/*
 training-data/*
 !training-data/alpaca_data.json
-evaluation/*
-!evaluation/evaluation_tasks.json.example
+!training-data/training_data.json.example
+generate/*
+!generate/generate_tasks.json.example
 flagged
 .idea/
+some_tests.py

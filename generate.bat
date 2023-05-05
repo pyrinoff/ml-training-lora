@@ -1,1 +1,1 @@
-python generate.py --base_model='decapoda-research/llama-7b-hf' --lora_weights="./output-lora-alpaca/" --load_8bit
+python generate.py --base_model='yahma/llama-7b-hf' --lora_weights="./output-lora-alpaca2/" --load_8bit --input_file="./generate/generate_tasks.json"
